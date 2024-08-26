@@ -2,6 +2,7 @@
 const p1=document.getElementById("p1")
 const p2=document.getElementById("p2")
 const p3=document.getElementById("p3")
+const p4=document.getElementById("p4")
 const p01=document.getElementById("p01")
 const p02=document.getElementById("p02")
 const p03=document.getElementById("p03")
@@ -51,6 +52,8 @@ Promise.all([Promise1(),Promise2(),Promise3()]).then((data)=>
 	{
 		let endTime=Date.now()
 		let totalTime= (endTime-startTime)/1000;
-		p04.innerHTML = `Total: ${totalTime.toFixed(3)} seconds`;
+		p4.innerHTML=`${totalTime.toFixed(3)}`;
+		p04.innerHTML=`Total`;
+    console.log("dh")
 		
 	})
