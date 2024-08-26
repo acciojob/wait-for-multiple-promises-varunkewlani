@@ -54,6 +54,5 @@ Promise.all([Promise1(),Promise2(),Promise3()]).then((data)=>
 		let totalTime= (endTime-startTime)/1000;
 		p4.innerHTML=`${totalTime.toFixed(3)}`;
 		p04.innerHTML=`Total`;
-    console.log("dh")
 		
 	})
