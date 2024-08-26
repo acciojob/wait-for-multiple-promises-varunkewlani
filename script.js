@@ -8,7 +8,7 @@ const p02=document.getElementById("p02")
 const p03=document.getElementById("p03")
 const p04=document.getElementById("p04")
 
-constt Promise1 = () => {
+const Promise1 = () => {
 	return new Promise((resolve,reject)=>
 		{
 			let a=Math.floor(Math.random()*3)+1;
@@ -21,7 +21,7 @@ constt Promise1 = () => {
 			},a*1000)
 		})
 }
-cont Promise2 = () => {
+const Promise2 = () => {
 	return new Promise((resolve,reject)=>
 		{
 			let b=Math.floor(Math.random()*3)+1;
@@ -30,11 +30,11 @@ cont Promise2 = () => {
 				
 				p2.innerHTML=`${b}`
 				p02.innerHTML=`Promise 2`
-				resolve(a);
+				resolve(b);
 			},b*1000)
 		})
 }
-cont Promise3 = () => {
+const Promise3 = () => {
 	return new Promise((resolve,reject)=>
 		{
 			let c=Math.floor(Math.random()*3)+1;
@@ -52,6 +52,7 @@ Promise.all([Promise1(),Promise2(),Promise3()]).then((data)=>
 	{
 		let endTime=Date.now()
 		let totalTime= (endTime-startTime)/1000;
-			p4.innerHTML=`${totalTime.toFixed(3)}`;
-		p04.innerHTML=`Total`
+		p4.innerHTML=`${totalTime.toFixed(3)}`;
+		p04.innerHTML=`Total`;
+		
 	})
